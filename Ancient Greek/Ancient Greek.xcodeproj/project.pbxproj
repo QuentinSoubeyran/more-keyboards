@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC89AE828704051003830F1 /* Ancient_GreekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC89AE728704051003830F1 /* Ancient_GreekApp.swift */; };
+		BCC89AEA28704051003830F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC89AE928704051003830F1 /* ContentView.swift */; };
+		BCC89AEC28704052003830F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC89AEB28704052003830F1 /* Assets.xcassets */; };
+		BCC89AEF28704052003830F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC89AEE28704052003830F1 /* Preview Assets.xcassets */; };
+		BCC89B1C287043B5003830F1 /* QWERTY.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCC89B15287043B5003830F1 /* QWERTY.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCC89B2E2871CD33003830F1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC89B2D2871CD33003830F1 /* KeyboardViewController.swift */; };
+		BCC89B322871CD34003830F1 /* Ancient Greek (qwerty).appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCC89B2B2871CD33003830F1 /* Ancient Greek (qwerty).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCC89B372871D138003830F1 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC89B362871D138003830F1 /* KeyboardView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC89AF528704052003830F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC89ADC28704051003830F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC89AE328704051003830F1;
+			remoteInfo = "Ancient Greek";
+		};
+		BCC89AFF28704053003830F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC89ADC28704051003830F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC89AE328704051003830F1;
+			remoteInfo = "Ancient Greek";
+		};
+		BCC89B1A287043B5003830F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC89ADC28704051003830F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC89B14287043B5003830F1;
+			remoteInfo = QWERTY;
+		};
+		BCC89B302871CD34003830F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC89ADC28704051003830F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC89B2A2871CD33003830F1;
+			remoteInfo = "Ancient Greek (qwerty)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCC89B20287043B5003830F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCC89B1C287043B5003830F1 /* QWERTY.appex in Embed App Extensions */,
+				BCC89B322871CD34003830F1 /* Ancient Greek (qwerty).appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BCC89AE428704051003830F1 /* Ancient Greek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ancient Greek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC89AE728704051003830F1 /* Ancient_GreekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ancient_GreekApp.swift; sourceTree = "<group>"; };
+		BCC89AE928704051003830F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCC89AEB28704052003830F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC89AEE28704052003830F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCC89AF428704052003830F1 /* Ancient GreekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ancient GreekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC89AFE28704053003830F1 /* Ancient GreekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ancient GreekUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC89B15287043B5003830F1 /* QWERTY.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QWERTY.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC89B2B2871CD33003830F1 /* Ancient Greek (qwerty).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ancient Greek (qwerty).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC89B2D2871CD33003830F1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		BCC89B2F2871CD33003830F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC89B362871D138003830F1 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC89AE128704051003830F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AF128704052003830F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AFB28704053003830F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B12287043B5003830F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B282871CD33003830F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC89ADB28704051003830F1 = {
+			isa = PBXGroup;
+			children = (
+				BCC89AE628704051003830F1 /* Ancient Greek */,
+				BCC89B2C2871CD33003830F1 /* Ancient Greek (qwerty) */,
+				BCC89AE528704051003830F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC89AE528704051003830F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC89AE428704051003830F1 /* Ancient Greek.app */,
+				BCC89AF428704052003830F1 /* Ancient GreekTests.xctest */,
+				BCC89AFE28704053003830F1 /* Ancient GreekUITests.xctest */,
+				BCC89B15287043B5003830F1 /* QWERTY.appex */,
+				BCC89B2B2871CD33003830F1 /* Ancient Greek (qwerty).appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC89AE628704051003830F1 /* Ancient Greek */ = {
+			isa = PBXGroup;
+			children = (
+				BCC89AE728704051003830F1 /* Ancient_GreekApp.swift */,
+				BCC89AE928704051003830F1 /* ContentView.swift */,
+				BCC89AEB28704052003830F1 /* Assets.xcassets */,
+				BCC89AED28704052003830F1 /* Preview Content */,
+			);
+			path = "Ancient Greek";
+			sourceTree = "<group>";
+		};
+		BCC89AED28704052003830F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCC89AEE28704052003830F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCC89B2C2871CD33003830F1 /* Ancient Greek (qwerty) */ = {
+			isa = PBXGroup;
+			children = (
+				BCC89B2D2871CD33003830F1 /* KeyboardViewController.swift */,
+				BCC89B2F2871CD33003830F1 /* Info.plist */,
+				BCC89B362871D138003830F1 /* KeyboardView.xib */,
+			);
+			path = "Ancient Greek (qwerty)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC89AE328704051003830F1 /* Ancient Greek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC89B0828704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient Greek" */;
+			buildPhases = (
+				BCC89AE028704051003830F1 /* Sources */,
+				BCC89AE128704051003830F1 /* Frameworks */,
+				BCC89AE228704051003830F1 /* Resources */,
+				BCC89B20287043B5003830F1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC89B1B287043B5003830F1 /* PBXTargetDependency */,
+				BCC89B312871CD34003830F1 /* PBXTargetDependency */,
+			);
+			name = "Ancient Greek";
+			productName = "Ancient Greek";
+			productReference = BCC89AE428704051003830F1 /* Ancient Greek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC89AF328704052003830F1 /* Ancient GreekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC89B0B28704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient GreekTests" */;
+			buildPhases = (
+				BCC89AF028704052003830F1 /* Sources */,
+				BCC89AF128704052003830F1 /* Frameworks */,
+				BCC89AF228704052003830F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC89AF628704052003830F1 /* PBXTargetDependency */,
+			);
+			name = "Ancient GreekTests";
+			productName = "Ancient GreekTests";
+			productReference = BCC89AF428704052003830F1 /* Ancient GreekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC89AFD28704053003830F1 /* Ancient GreekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC89B0E28704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient GreekUITests" */;
+			buildPhases = (
+				BCC89AFA28704053003830F1 /* Sources */,
+				BCC89AFB28704053003830F1 /* Frameworks */,
+				BCC89AFC28704053003830F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC89B0028704053003830F1 /* PBXTargetDependency */,
+			);
+			name = "Ancient GreekUITests";
+			productName = "Ancient GreekUITests";
+			productReference = BCC89AFE28704053003830F1 /* Ancient GreekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BCC89B14287043B5003830F1 /* QWERTY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC89B1D287043B5003830F1 /* Build configuration list for PBXNativeTarget "QWERTY" */;
+			buildPhases = (
+				BCC89B11287043B5003830F1 /* Sources */,
+				BCC89B12287043B5003830F1 /* Frameworks */,
+				BCC89B13287043B5003830F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QWERTY;
+			productName = QWERTY;
+			productReference = BCC89B15287043B5003830F1 /* QWERTY.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCC89B2A2871CD33003830F1 /* Ancient Greek (qwerty) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC89B332871CD34003830F1 /* Build configuration list for PBXNativeTarget "Ancient Greek (qwerty)" */;
+			buildPhases = (
+				BCC89B272871CD33003830F1 /* Sources */,
+				BCC89B282871CD33003830F1 /* Frameworks */,
+				BCC89B292871CD33003830F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ancient Greek (qwerty)";
+			productName = "Ancient Greek (qwerty)";
+			productReference = BCC89B2B2871CD33003830F1 /* Ancient Greek (qwerty).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC89ADC28704051003830F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BCC89AE328704051003830F1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BCC89AF328704052003830F1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BCC89AE328704051003830F1;
+					};
+					BCC89AFD28704053003830F1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BCC89AE328704051003830F1;
+					};
+					BCC89B14287043B5003830F1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BCC89B2A2871CD33003830F1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BCC89ADF28704051003830F1 /* Build configuration list for PBXProject "Ancient Greek" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC89ADB28704051003830F1;
+			productRefGroup = BCC89AE528704051003830F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC89AE328704051003830F1 /* Ancient Greek */,
+				BCC89AF328704052003830F1 /* Ancient GreekTests */,
+				BCC89AFD28704053003830F1 /* Ancient GreekUITests */,
+				BCC89B14287043B5003830F1 /* QWERTY */,
+				BCC89B2A2871CD33003830F1 /* Ancient Greek (qwerty) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC89AE228704051003830F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC89AEF28704052003830F1 /* Preview Assets.xcassets in Resources */,
+				BCC89AEC28704052003830F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AF228704052003830F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AFC28704053003830F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B13287043B5003830F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B292871CD33003830F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC89B372871D138003830F1 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC89AE028704051003830F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC89AEA28704051003830F1 /* ContentView.swift in Sources */,
+				BCC89AE828704051003830F1 /* Ancient_GreekApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AF028704052003830F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89AFA28704053003830F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B11287043B5003830F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC89B272871CD33003830F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC89B2E2871CD33003830F1 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC89AF628704052003830F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC89AE328704051003830F1 /* Ancient Greek */;
+			targetProxy = BCC89AF528704052003830F1 /* PBXContainerItemProxy */;
+		};
+		BCC89B0028704053003830F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC89AE328704051003830F1 /* Ancient Greek */;
+			targetProxy = BCC89AFF28704053003830F1 /* PBXContainerItemProxy */;
+		};
+		BCC89B1B287043B5003830F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC89B14287043B5003830F1 /* QWERTY */;
+			targetProxy = BCC89B1A287043B5003830F1 /* PBXContainerItemProxy */;
+		};
+		BCC89B312871CD34003830F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC89B2A2871CD33003830F1 /* Ancient Greek (qwerty) */;
+			targetProxy = BCC89B302871CD34003830F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCC89B0628704053003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCC89B0728704053003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC89B0928704053003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ancient Greek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC89B0A28704053003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ancient Greek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCC89B0C28704053003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-GreekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ancient Greek.app/Ancient Greek";
+			};
+			name = Debug;
+		};
+		BCC89B0D28704053003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-GreekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ancient Greek.app/Ancient Greek";
+			};
+			name = Release;
+		};
+		BCC89B0F28704053003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-GreekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ancient Greek";
+			};
+			name = Debug;
+		};
+		BCC89B1028704053003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-GreekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ancient Greek";
+			};
+			name = Release;
+		};
+		BCC89B1E287043B5003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QWERTY;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek.QWERTY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC89B1F287043B5003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWERTY/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QWERTY;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek.QWERTY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCC89B342871CD34003830F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ancient Greek (qwerty)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Greek (qwerty)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek.Ancient-Greek--qwerty-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC89B352871CD34003830F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ancient Greek (qwerty)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ancient Greek (qwerty)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quentin-soubeyran.Ancient-Greek.Ancient-Greek--qwerty-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC89ADF28704051003830F1 /* Build configuration list for PBXProject "Ancient Greek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B0628704053003830F1 /* Debug */,
+				BCC89B0728704053003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC89B0828704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient Greek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B0928704053003830F1 /* Debug */,
+				BCC89B0A28704053003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC89B0B28704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient GreekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B0C28704053003830F1 /* Debug */,
+				BCC89B0D28704053003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC89B0E28704053003830F1 /* Build configuration list for PBXNativeTarget "Ancient GreekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B0F28704053003830F1 /* Debug */,
+				BCC89B1028704053003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC89B1D287043B5003830F1 /* Build configuration list for PBXNativeTarget "QWERTY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B1E287043B5003830F1 /* Debug */,
+				BCC89B1F287043B5003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC89B332871CD34003830F1 /* Build configuration list for PBXNativeTarget "Ancient Greek (qwerty)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC89B342871CD34003830F1 /* Debug */,
+				BCC89B352871CD34003830F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC89ADC28704051003830F1 /* Project object */;
+}
