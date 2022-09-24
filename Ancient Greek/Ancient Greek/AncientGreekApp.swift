@@ -8,10 +8,9 @@
 import SwiftUI
 
 @main
-struct Ancient_GreekApp: App {
+struct AncientGreekApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
         }
     }
 }

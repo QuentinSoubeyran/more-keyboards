@@ -1,8 +1,8 @@
 //
 //  KeyboardViewController.swift
-//  Ancient Greek (qwerty)
+//  fughczfibu
 //
-//  Created by Quentin Soubeyran (Perso) on 7/3/22.
+//  Created by Quentin Soubeyran (Perso) on 9/24/22.
 //
 
 import UIKit
@@ -20,18 +20,23 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let keyboardNib = UINib(nibName: "KeyboardView", bundle: nil)
-        if let keyboardView = keyboardNib.instantiate(withOwner: self, options: nil).first as? UIView {
-            view.addSubview(keyboardView)
-        }
+        // Perform custom UI setup here
+        self.nextKeyboardButton = UIButton(type: .custom)
         
-        nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        //self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
+        var config = UIButton.Configuration.plain()
+        config.image = UIImage(systemName: "globe")!.withRenderingMode(.alwaysOriginal)
+        self.nextKeyboardButton.configuration = config
+        self.nextKeyboardButton.sizeToFit()
+        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        
+        self.view.addSubview(self.nextKeyboardButton)
+        
+        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
-    
-    @IBAction func keyPressed(sender: UIButton) {
-        self.textDocumentProxy.insertText(sender.titleLabel!.text!)
-    }
-    
     
     override func viewWillLayoutSubviews() {
         self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
