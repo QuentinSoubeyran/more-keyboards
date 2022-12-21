@@ -26,7 +26,7 @@ struct KeyView: View {
     init<V: View>(fromView: V, callback: Callback? = nil, shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors())
     {
         self.content = AnyView(fromView)
-        self.callback=callback
+        self.callback = callback
         self.shape = shape
         self.colors = colors
     }

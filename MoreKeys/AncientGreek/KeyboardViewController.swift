@@ -49,7 +49,6 @@ class KeyboardViewController: UIInputViewController {
         let layout = Layouts.ancientGreekComplement(proxy:proxy,nextKeyboardButton:nextKeyboardButton, colors:colors)
         self.nextKeyboardButton = layout.nextKeyboardButton!
         self.wrapper = swiftUIToUIKitViewController(layout, into:self)
-        
     }
     
     override func viewWillLayoutSubviews() {

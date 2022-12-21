@@ -46,5 +46,4 @@ struct Layouts {
         }
         return KeyboardLayout(keyboard: KeyboardView(fromViews:[keyboardRow], shape:shape, colors:colors), nextKeyboardButton: nextKeyboardButtonWrapper)
     }
-    
 }
