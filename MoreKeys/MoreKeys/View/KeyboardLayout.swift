@@ -14,6 +14,7 @@ struct KeyboardLayout: View {
     var body: some View {
         self.keyboard
     }
+    
 }
 
 struct KeyboardLayout_Previews: PreviewProvider {

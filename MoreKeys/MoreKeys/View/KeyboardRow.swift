@@ -9,29 +9,26 @@ import SwiftUI
 
 struct KeyboardRow: View {
     var keys: [AnyView]
-    var shape: KeyboardShape
-    var colors: KeyboardColors
+    var styling: KeyboardStyling
     
-    init(keys: [AnyView], shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors()) {
+    init(keys: [AnyView], styling: KeyboardStyling = KeyboardStyling()) {
         self.keys = keys
-        self.colors = colors
-        self.shape = shape
+        self.styling = styling
     }
     
-    init<V: View>(fromViews: [V], shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors()) {
+    init<V: View>(fromViews: [V], styling: KeyboardStyling = KeyboardStyling()) {
         self.keys = fromViews.map {AnyView($0)}
-        self.colors = colors
-        self.shape = shape
+        self.styling = styling
     }
     
     var body: some View {
-        HStack(spacing:self.shape.keySpacing) {
+        HStack(spacing:self.styling.keySpacing) {
             ForEach(keys.startIndex...keys.endIndex-1, id: \.self) { index in
                     keys[index]
             }
         }
         .frame(minWidth:0, maxWidth: .infinity)
-        .background(self.colors.keyboardBackground)
+        .background(self.styling.keyboardBackground)
     }
 }
 

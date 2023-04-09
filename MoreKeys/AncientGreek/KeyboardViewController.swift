@@ -27,12 +27,12 @@ class KeyboardViewController: UIInputViewController {
         super.updateViewConstraints()
     }
     
-    func makeNextKeayboardButton(colors: KeyboardColors = KeyboardColors()) -> UIButton {
+    func makeNextKeyboardButton(styling: KeyboardStyling = KeyboardStyling()) -> UIButton {
         // Create a nextKeyboardButton, style it and add the callback
         let nextKeyboardButton = UIButton(type: .custom)
         var config = UIButton.Configuration.plain()
         config.image = UIImage(systemName: "globe")!.withRenderingMode(.alwaysTemplate)
-        nextKeyboardButton.tintColor = UIColor(colors.keyForeground)
+        nextKeyboardButton.tintColor = UIColor(styling.keyForeground)
         nextKeyboardButton.configuration = config
         // nextKeyboardButton.sizeToFit()
         
@@ -43,10 +43,9 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let colors = KeyboardColors()
-        let nextKeyboardButton = self.makeNextKeayboardButton(colors: colors)
+        let nextKeyboardButton = self.makeNextKeyboardButton(styling: Styles.ancientGreek)
         let proxy = KeyboardViewTextProxy(controller:self)
-        let layout = Layouts.ancientGreekComplement(proxy:proxy,nextKeyboardButton:nextKeyboardButton, colors:colors)
+        let layout = Layouts.ancientGreekComplement(proxy:proxy,nextKeyboardButton:nextKeyboardButton)
         self.nextKeyboardButton = layout.nextKeyboardButton!
         self.wrapper = swiftUIToUIKitViewController(layout, into:self)
     }

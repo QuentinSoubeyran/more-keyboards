@@ -9,39 +9,35 @@ import SwiftUI
 
 struct KeyboardView: View {
     var rows: [KeyboardRow]
-    var shape: KeyboardShape
-    var colors: KeyboardColors
+    var styling: KeyboardStyling
     
-    init(rows: [KeyboardRow], shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors()) {
+    init(rows: [KeyboardRow], styling: KeyboardStyling = KeyboardStyling()) {
         self.rows = rows
-        self.shape = shape
-        self.colors = colors
+        self.styling = styling
     }
     
-    init(fromViews: [[AnyView]], shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors()) {
+    init(fromViews: [[AnyView]], styling: KeyboardStyling = KeyboardStyling()) {
         self.rows = fromViews.map {
-            KeyboardRow(keys: $0, shape:shape, colors:colors)
+            KeyboardRow(keys: $0, styling:styling)
         }
-        self.shape = shape
-        self.colors = colors
+        self.styling = styling
     }
     
-    init<V: View>(fromViews: [[V]], shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors()) {
+    init<V: View>(fromViews: [[V]], styling: KeyboardStyling = KeyboardStyling()) {
         self.rows = fromViews.map {
-            KeyboardRow(fromViews: $0)
+            KeyboardRow(fromViews: $0, styling:styling)
         }
-        self.shape = shape
-        self.colors = colors
+        self.styling = styling
     }
     
     var body: some View {
-        VStack(spacing:self.shape.rowSpacing) {
+        VStack(spacing:self.styling.rowSpacing) {
             ForEach(rows.startIndex...rows.endIndex-1, id: \.self) { index in
                     rows[index]
             }
         }
         .padding([.horizontal, .top])
-        .background(self.colors.keyboardBackground)
+        .background(self.styling.keyboardBackground)
     }
 }
 

@@ -8,16 +8,17 @@
 import SwiftUI
 import UIKit
 
-struct KeyboardColors {
+struct KeyboardStyling {
     var keyboardBackground: Color = Color("keyboardBackground")
     var keyBackground: Color = Color("keyBackground")
     var keyForeground: Color = Color.primary
-}
-
-struct KeyboardShape {
+    
     var keyWidth: CGFloat = Globals.keyWidth
     var keyHeight: CGFloat = Globals.keyWidth * Globals.keyAspectRatio
     var keyRadius: CGFloat = Globals.keyWidth / 5.5
+    
     var keySpacing: CGFloat = Globals.keyWidth / 7.5
     var rowSpacing: CGFloat = Globals.keyWidth / 7.5
+
+    var font: Font = Font.system(size: 30)
 }

@@ -16,9 +16,17 @@
 		BC8A91CD28D8FCAA008B7ADA /* TextProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A91CC28D8FCAA008B7ADA /* TextProxy.swift */; };
 		BC8A91D028D8FE87008B7ADA /* InsertTextCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8A91CF28D8FE87008B7ADA /* InsertTextCallback.swift */; };
 		BC9A8AC42873705D006C2597 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9A8AC32873705D006C2597 /* KeyboardView.swift */; };
+		BCA4A8F029C77F3300B58F65 /* IFAOGrecExposant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8EF29C77F3300B58F65 /* IFAOGrecExposant.ttf */; };
+		BCA4A8F129C77F3300B58F65 /* IFAOGrecExposant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8EF29C77F3300B58F65 /* IFAOGrecExposant.ttf */; };
+		BCA4A8F629C7812B00B58F65 /* IFAOGrec.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8F429C7812A00B58F65 /* IFAOGrec.ttf */; };
+		BCA4A8F729C7812B00B58F65 /* IFAOGrec.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8F429C7812A00B58F65 /* IFAOGrec.ttf */; };
+		BCA4A8F829C7812B00B58F65 /* IFAOGrecBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8F529C7812B00B58F65 /* IFAOGrecBold.ttf */; };
+		BCA4A8F929C7812B00B58F65 /* IFAOGrecBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA4A8F529C7812B00B58F65 /* IFAOGrecBold.ttf */; };
 		BCAFFBDD28FC26AA008B3D2B /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFBDC28FC26AA008B3D2B /* KeyboardLayout.swift */; };
 		BCAFFBE128FC29B4008B3D2B /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFBE028FC29B4008B3D2B /* Structs.swift */; };
 		BCAFFBE428FC40E5008B3D2B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFBE328FC40E5008B3D2B /* Helpers.swift */; };
+		BCBB554429E2BD290068A624 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB554329E2BD290068A624 /* Styles.swift */; };
+		BCBB554529E2BE0E0068A624 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB554329E2BD290068A624 /* Styles.swift */; };
 		BCC89AE828704051003830F1 /* AncientGreekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC89AE728704051003830F1 /* AncientGreekApp.swift */; };
 		BCC89AEA28704051003830F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC89AE928704051003830F1 /* ContentView.swift */; };
 		BCC89AEC28704052003830F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC89AEB28704052003830F1 /* Assets.xcassets */; };
@@ -74,9 +82,13 @@
 		BC8A91CC28D8FCAA008B7ADA /* TextProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProxy.swift; sourceTree = "<group>"; };
 		BC8A91CF28D8FE87008B7ADA /* InsertTextCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTextCallback.swift; sourceTree = "<group>"; };
 		BC9A8AC32873705D006C2597 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		BCA4A8EF29C77F3300B58F65 /* IFAOGrecExposant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IFAOGrecExposant.ttf; sourceTree = "<group>"; };
+		BCA4A8F429C7812A00B58F65 /* IFAOGrec.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IFAOGrec.ttf; sourceTree = "<group>"; };
+		BCA4A8F529C7812B00B58F65 /* IFAOGrecBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IFAOGrecBold.ttf; sourceTree = "<group>"; };
 		BCAFFBDC28FC26AA008B3D2B /* KeyboardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
 		BCAFFBE028FC29B4008B3D2B /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		BCAFFBE328FC40E5008B3D2B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BCBB554329E2BD290068A624 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		BCC89AE428704051003830F1 /* MoreKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC89AE728704051003830F1 /* AncientGreekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientGreekApp.swift; sourceTree = "<group>"; };
 		BCC89AE928704051003830F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8A91BD28D644A6008B7ADA /* Globals.swift */,
+				BCBB554329E2BD290068A624 /* Styles.swift */,
 				BC8A91C728D8F761008B7ADA /* Layouts.swift */,
 			);
 			path = Constants;
@@ -143,6 +156,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BCA4A8EE29C77F0B00B58F65 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4A8F429C7812A00B58F65 /* IFAOGrec.ttf */,
+				BCA4A8F529C7812B00B58F65 /* IFAOGrecBold.ttf */,
+				BCA4A8EF29C77F3300B58F65 /* IFAOGrecExposant.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BCAFFBDF28FC29A5008B3D2B /* Struct */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +196,7 @@
 		BCC89AE628704051003830F1 /* MoreKeys */ = {
 			isa = PBXGroup;
 			children = (
+				BCA4A8EE29C77F0B00B58F65 /* Fonts */,
 				BCAFFBDF28FC29A5008B3D2B /* Struct */,
 				BC8A91CE28D8FD78008B7ADA /* Callbacks */,
 				BC8A91C928D8FAEA008B7ADA /* Protocols */,
@@ -284,7 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4A8F629C7812B00B58F65 /* IFAOGrec.ttf in Resources */,
 				BCC89AEF28704052003830F1 /* Preview Assets.xcassets in Resources */,
+				BCA4A8F829C7812B00B58F65 /* IFAOGrecBold.ttf in Resources */,
+				BCA4A8F029C77F3300B58F65 /* IFAOGrecExposant.ttf in Resources */,
 				BCC89AEC28704052003830F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4A8F129C77F3300B58F65 /* IFAOGrecExposant.ttf in Resources */,
+				BCA4A8F929C7812B00B58F65 /* IFAOGrecBold.ttf in Resources */,
 				BCCCAF4728FC51480024AE6A /* Assets.xcassets in Resources */,
+				BCA4A8F729C7812B00B58F65 /* IFAOGrec.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +340,7 @@
 				BC8A91D028D8FE87008B7ADA /* InsertTextCallback.swift in Sources */,
 				BC8A91CD28D8FCAA008B7ADA /* TextProxy.swift in Sources */,
 				BC9A8AC42873705D006C2597 /* KeyboardView.swift in Sources */,
+				BCBB554429E2BD290068A624 /* Styles.swift in Sources */,
 				BC8A91CB28D8FAF8008B7ADA /* Callback.swift in Sources */,
 				BCAFFBE428FC40E5008B3D2B /* Helpers.swift in Sources */,
 				BC8A91C428D71E78008B7ADA /* KeyView.swift in Sources */,
@@ -326,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCCAF4128FC50360024AE6A /* Structs.swift in Sources */,
+				BCBB554529E2BE0E0068A624 /* Styles.swift in Sources */,
 				BCCCAF3C28FC50360024AE6A /* Layouts.swift in Sources */,
 				BCCCAF4028FC50360024AE6A /* InsertTextCallback.swift in Sources */,
 				BCCCAF4628FC50360024AE6A /* TextProxy.swift in Sources */,

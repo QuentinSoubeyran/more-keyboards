@@ -12,23 +12,20 @@ struct KeyView: View {
     var content: AnyView = AnyView(Text("a"))
     var callback: Callback? = nil
     
-    var shape: KeyboardShape
-    var colors: KeyboardColors
+    var styling: KeyboardStyling
     
-    init(fromString: String = "a", callback: Callback? = nil, shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors())
+    init(fromString: String = "a", callback: Callback? = nil, styling: KeyboardStyling = KeyboardStyling())
     {
         self.content = AnyView(Text(fromString))
         self.callback = callback
-        self.shape = shape
-        self.colors = colors
+        self.styling = styling
     }
     
-    init<V: View>(fromView: V, callback: Callback? = nil, shape: KeyboardShape = KeyboardShape(), colors:KeyboardColors =  KeyboardColors())
+    init<V: View>(fromView: V, callback: Callback? = nil, styling: KeyboardStyling = KeyboardStyling())
     {
         self.content = AnyView(fromView)
         self.callback = callback
-        self.shape = shape
-        self.colors = colors
+        self.styling = styling
     }
     
     
@@ -37,13 +34,11 @@ struct KeyView: View {
             callback?.exec()
         } label: {
             self.content
-                .font(.system(size: 30))
-                .frame(maxWidth: self.shape.keyWidth, minHeight: self.shape.keyHeight, maxHeight: self.shape.keyHeight)
-                .background(self.colors.keyBackground)
-                .foregroundColor(self.colors.keyForeground)
-                .cornerRadius(self.shape.keyRadius)
-                
-                
+                .font(self.styling.font)
+                .frame(maxWidth: self.styling.keyWidth, minHeight: self.styling.keyHeight, maxHeight: self.styling.keyHeight)
+                .background(self.styling.keyBackground)
+                .foregroundColor(self.styling.keyForeground)
+                .cornerRadius(self.styling.keyRadius)
         }
         .buttonStyle(.plain)
     }

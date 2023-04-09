@@ -26,18 +26,17 @@ struct TogglableUIButtonView: View {
     
     var button: UIButton? = nil
     
-    var shape: KeyboardShape = KeyboardShape()
-    var colors: KeyboardColors = KeyboardColors()
+    var styling: KeyboardStyling = KeyboardStyling()
     
     var visible: Bool = true
     
     var body: some View {
         if self.button != nil && self.visible {
              UIButtonWrapper(button:self.button!)
-                .frame(maxWidth: self.shape.keyWidth, maxHeight: self.shape.keyHeight)
-                .background(self.colors.keyBackground)
-                .foregroundColor(self.colors.keyForeground)
-                .cornerRadius(self.shape.keyRadius)
+                .frame(maxWidth: self.styling.keyWidth, maxHeight: self.styling.keyHeight)
+                .background(self.styling.keyBackground)
+                .foregroundColor(self.styling.keyForeground)
+                .cornerRadius(self.styling.keyRadius)
         }
     }
 }
