@@ -48,6 +48,10 @@ class KeyboardViewController: UIInputViewController {
         let layout = Layouts.ancientGreekComplement(proxy:proxy,nextKeyboardButton:nextKeyboardButton)
         self.nextKeyboardButton = layout.nextKeyboardButton!
         self.wrapper = swiftUIToUIKitViewController(layout, into:self)
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
     }
     
     override func viewWillLayoutSubviews() {

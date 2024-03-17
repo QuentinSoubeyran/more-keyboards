@@ -30,9 +30,9 @@ struct Layouts {
     }
     
     static func ancientGreekComplement(proxy: TextProxy? = nil, nextKeyboardButton: UIButton? = nil) -> KeyboardLayout {
-        var styling: KeyboardStyling = Styles.ancientGreek
+        let styling: KeyboardStyling = Styles.ancientGreek
         let row = [
-            "{", "}", "\u{0304}", "'", "\u{0387}", "\u{0323}", "[", "]", "\u{301A}", "\u{301B}", "\u{E600}"
+            "{", "}", "\u{0304}", "'", "\u{0387}", "\u{0323}", "[", "]", "\u{301A}", "\u{301B}", "\u{2CD0}", "\u{E600}"
         ]
         var keyboardRow = row.map {
             AnyView(KeyView(

@@ -9,5 +9,6 @@ import SwiftUI
 
 struct Styles {
     static let standard =  KeyboardStyling()
-    static let ancientGreek = KeyboardStyling(font: Font.custom("IFAO-Grec-Exposant", size: 30))
+    static let ancientGreek = KeyboardStyling(font: Font.custom("IFAO-Grec-Unicode", size: 30))
+    // static let ancientGreek = KeyboardStyling(font: Font.system(size: 30))
 }
